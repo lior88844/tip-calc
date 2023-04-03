@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'valera';
+  src: url('../fonts/VarelaRound-Regular.ttf');
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  direction: rtl;
+  background-image: url('../img/piano.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  font-family: 'valera';
+}
+h1 {
+  margin: 0px;
+  padding-top: 10px;
+  font-size: 30px;
+}
+h2 {
+  margin: 0px;
+  margin-top: 5px;
+  padding-bottom: 10px;
+}
+.header {
+  background-color: #ede7c96c;
+  margin-bottom: 30px;
+}
+.tip-calc-layout {
+  display: grid;
+  grid-template-columns: 60px 1fr 60px;
+  align-items: center;
+  justify-content: center;
+}
+.tip-calc-layout > * {
+  grid-column: 2;
+}
+.tip-calc {
+  background-color: #bca78a;
+  border-radius: 8px;
+  padding: 20px;
+}
+.tip-total {
+  display: grid;
+  gap: 20px;
+  grid-auto-flow: column;
+  background-color: #dbd3bd;
+  padding: 10px;
+  margin-block-end: 20px;
+  border-radius: 8px;
+  text-align: start;
+}
+.tip-result {
+  display: grid;
+}
+button {
+  justify-self: flex-end;
+}
+form {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+input:not([type='submit']) {
+  width: fit-content;
+  justify-self: self-end;
+  border: none;
+  background-color: #f7f7e1;
+  padding: 3px;
+  border-radius: 3px;
+  width: 100%;
+}
+input:focus-visible {
+  border: none;
+  outline: none;
+  background-color: #fcfcf6;
+}
+input[type='submit'] {
+  grid-column: 2;
+  justify-self: flex-end;
+}
+select {
+  width: fit-content;
+  justify-self: end;
+}
+label {
+  display: flex;
+  align-items: flex-end;
+}
+li {
+  display: grid;
+  justify-items: start;
+  grid-auto-flow: column;
+  gap: 5px;
+  justify-content: flex-start;
+  align-items: center;
+}
+p {
+  grid-column: 2;
+  margin: 0px;
+}
+p:nth-of-type(2) {
+  font-size: 12px;
+}
+ul {
+  padding: 0px;
+}

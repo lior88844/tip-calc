@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Tip Generator</title>
+  </head>
+  <body>
+    <section class="header">
+      <h1>מחשבון הטיפים</h1>
+      <h2>של בית העמודים</h2>
+    </section>
+    <section class="tip-calc-layout">
+      <div class="tip-calc">
+        <div class="tip-total wrapper">
+          <label> סך הכול טיפ: </label>
+          <input type="number" onchange="onSetTotalTip(this.value)" />
+        </div>
+        <div class="tip-per-waiter wrapper">
+          <form onsubmit="onAddWaiter(event,this)">
+            <label>שם המלצר: </label>
+            <input name="waiterName" type="text" />
+
+            <label>שעות במשמרת: </label>
+            <input name="waiterHours" type="number" step="any" />
+
+            <input type="submit" value="הוסף מלצר" />
+          </form>
+        </div>
+        <div class="tip-result wrapper">
+          <ul class="waiters-list"></ul>
+          <button onclick="onRoundTips()">לעגל</button>
+        </div>
+      </div>
+    </section>
+    <script src="/script/util.service.js"></script>
+    <script src="/script/tip.service.js"></script>
+    <script src="/script/tip.controller.js"></script>
+  </body>
+</html>
