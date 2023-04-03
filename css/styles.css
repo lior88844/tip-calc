@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'valera';
-  src: url('../fonts/VarelaRound-Regular.ttf');
+  src: url('/fonts/VarelaRound-Regular.ttf');
 }
 body {
   width: 100vw;
   height: 100vh;
   text-align: center;
   direction: rtl;
-  background-image: url('../img/piano.png');
+  background-image: url('/img/piano.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
